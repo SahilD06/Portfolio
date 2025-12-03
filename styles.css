@@ -152,13 +152,15 @@ body {
 }
 
 .portrait-placeholder img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   background-color: var(--color-surface);
 }
+
 
 
 /* Buttons */
@@ -442,6 +444,9 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .portrait-placeholder img {
+    max-width: 220px;
+  }
   .nav-menu {
     gap: var(--spacing-sm);
   }

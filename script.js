@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -12,7 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Add active class to navigation based on scroll position
 const sections = document.querySelectorAll("section[id]")
 const navLinks = document.querySelectorAll(".nav-link")
 
@@ -39,7 +38,6 @@ function highlightNavigation() {
 
 window.addEventListener("scroll", highlightNavigation)
 
-// Add scroll effect to navigation bar
 let lastScrollTop = 0
 const nav = document.querySelector(".nav")
 
@@ -55,7 +53,6 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop
 })
 
-// Intersection Observer for fade-in animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -70,7 +67,6 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe all project cards and skill cards
 document.querySelectorAll(".project-card, .skill-card").forEach((card) => {
   card.style.opacity = "0"
   card.style.transform = "translateY(20px)"
@@ -78,5 +74,4 @@ document.querySelectorAll(".project-card, .skill-card").forEach((card) => {
   observer.observe(card)
 })
 
-// Log page load
 console.log("[v0] Portfolio website loaded successfully")

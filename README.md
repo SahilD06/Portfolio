@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This site is a clean and responsive showcase of my skills, experience, and the projects I've built.
 
 ## 🔗 Live Site
-Explore my projects and portfolio here: [https://github.com/SahilD06/Portfolio](https://github.com/SahilD06/Portfolio)
+Explore my projects and portfolio here: [https://sahild06.github.io/Portfolio/](https://sahild06.github.io/Portfolio/)
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript
